@@ -1,0 +1,351 @@
+body{
+    color: 3A3A3A;
+    font-family: 'Poppins', sans-serif;
+}
+/*----------- header CSS --------*/
+.header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+.header-title-section h1{
+    font-weight: bold;
+    font-size: 52px;
+    color: #3A3A3A;
+    width: 70%;
+}
+/*  */
+.header-title-section p{
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    width: 55%;
+    padding-bottom: 16px;
+}
+.header-title-section a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+}
+.header-title-section a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    
+    transition: padding 0.7s;
+}
+.header-title-section a:hover{
+    
+    padding: 20px 48px;
+    
+    
+}
+.header-image-section{
+    position: relative;
+}
+/* ------------------------ */
+/* --------latest-collection-heading------- */
+
+
+
+/* Partner section */
+
+.partner-section{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+/* ------------ */
+
+/* Product collection ---------*/
+
+.latest-collection{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.collection{
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.products-collection{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 100px;
+    padding: 50px 0px;
+    
+}
+.product{
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 100px rgb(224, 224, 224);
+}
+.product h3{
+    font-weight: 500;
+    font-size: 28px;
+    margin: 10px 0px;
+}
+.product h4{
+    font-weight: normal;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.product-ratings{
+    display: flex;
+    align-items: center;
+}
+.product-ratings div i{
+    color: #FB8200;
+    padding-right: 2px;
+
+}
+.product-ratings span{
+    padding-left: 10px;
+    color: #5E6366;
+
+}
+.product p{
+   line-height: 24px;
+    color: #5E6366;
+
+}
+.see-more-link{
+    position: relative;
+    
+    
+}
+.see-more-link a{
+   text-decoration: none;
+    color: #E02C6D;
+    
+}
+
+
+.details-link{
+    position: absolute;
+    right: 0;
+}
+
+/* ------------ service */
+.service-section{
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.service-section h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    color: #3A3A3A;
+    
+
+}
+.service div div i{
+    width: 26px;
+    height: 30px;
+    color: #FB8200;
+
+}
+
+/* --------------- */
+
+/* ------footer-------- */
+.footer{
+    background-color: #0A0826;
+    color: #FFFFFF;
+    padding: 30px;
+    
+
+}
+/* -----footer font size----- */
+.footer h3{
+    font-weight: bold;
+    font-size: 24px;
+}
+.footer p{
+    font-weight: bold;
+    font-size: 10px;
+}
+.footer-link{
+    text-align: center;
+    
+    
+}
+.icon a {
+    color: white;
+    background-color: #414040;
+   
+    padding: 5px 9px;
+    border-radius: 50%;
+
+}
+/* ------------- */
+
+/*--------- Media query  Mobile view ------------------*/
+
+@media only screen and (max-width: 687px) {
+
+        /* header CSS */
+    .header{
+            display: inline;
+            width: 90%;
+            margin: 0  auto;
+    }
+    .header-title-section{
+        width: 100%;
+        
+    }
+    .header-title-section h1{
+        width: 100%;
+    }
+    .header-title-section p{
+        width: 100%;
+    }
+    .header-image-section  img{
+        width:100%;
+    }
+        /* ------------------------- */
+
+        /* Partner section ------*/
+
+    .partner-section{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-items: center;
+    }
+
+    /* -------------------------- */
+
+    /* Product collection ---------*/
+
+    .products-collection{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        padding: 50px 0px;
+        
+    }
+    /* ------------ service */
+.service-section{
+    width: 100%;
+    padding: 50px 0px;
+}
+.service-section h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    color: #3A3A3A;
+    
+
+}
+
+  }
+
+  /* ------- Media Query Tab view */
+
+  @media only screen and (min-width:688px) and (max-width:821px){
+
+    /* ---------header CSS ---------*/
+    .header{
+        width: 90%;
+            margin: 0  auto;
+        
+    }
+    .header-title-section{
+        width: 80%;
+        margin: 0  auto;
+        padding-bottom: 50px;
+    }
+    .header-title-section h1{
+        width: 100%;
+    }
+    .header-title-section p{
+        width: 90%;
+    }
+    .header-image-section  img{
+        width: 90%;
+    }
+    /* ----------------------------- */
+
+    
+        /* Partner section ------*/
+
+        .partner-section{
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr) ;
+            grid-column-gap: 0px;
+            grid-row-gap: 20px;
+            align-items: center;
+        }
+
+        /* Product collection ---------*/
+
+    .products-collection{
+        /* width:100%;
+        margin: 0 auto; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+         grid-column-gap: 20px;
+        padding: 50px 0px;
+        
+    }
+      /* ------------ service */
+.service-section{
+    width: 90%;
+    margin: 0  auto;
+    padding: 50px 0px;
+}
+.service-section h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    color: #3A3A3A;
+    
+
+}
+      
+
+}
+
